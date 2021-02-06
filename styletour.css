@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    box-sizing: border-box;
+    font-family: 'Yeon Sung', cursive;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('tajm.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+nav{
+    width: 100%;
+    height:15vh;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    opacity: 0.4;
+
+}
+nav .logo{
+    width: 25%;
+    text-align: center;
+    
+}
+nav .menu{
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+nav .menu a{
+    /* width: 25%; */
+    color: white;
+    font-weight: bold;
+}
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+section h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+section h1{
+    margin: 30px 0px 2px 0px;
+    font-size:55px;
+    font-weight: 200;
+    text-shadow: 2px 1px 5px black;
+}
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+section a{
+    padding:12px 30px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing:1px;
+    transform: all 0.5s ease;
+}
+
+section .btn1{
+    background: white;
+    color:black;
+    text-transform: uppercase;
+}
+.btn1:hover{
+    color:tomato;
+}
+section .btn2{
+    background: turquoise;
+    color:white;
+    text-transform: uppercase;
+}
+.change_content::after{
+    content:'';
+    animation:changetext 9s infinite linear;
+    color:violet;
+}
+@keyframes changetext{
+    0%{content:"Darjeeling"}
+    10%{content:"Agra"}
+    30%{content:"Srinagar"}
+    40%{content:"Goa"}
+    50%{content:"Kerala"}
+    60%{content:"Jaipur"}
+    70%{content:"Dehradun"}
+    80%{content:"Lucknow"}
+    90%{content:"Gaya"}
+    100%{content:"Bhopal"}
+}
+.animate__heartBeat{
+    animation:heartBeat 0.1s infinite linear;
+    /* animation-direction: normal; */
+    
+}
